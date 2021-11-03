@@ -1,0 +1,39 @@
+{
+  "name": "arkentask",
+  "version": "1.0.0",
+  "description": "Arkenstone's task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeaZ-pixel/ArkenstonTask.git"
+  },
+  "keywords": [
+    "task"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.27.5",
+    "core-js": "^3.17.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.39.2",
+    "webpack": "^5.52.1",
+    "webpack-stream": "^7.0.0"
+  },
+  "author": "Nariman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZeaZ-pixel/ArkenstonTask/issues"
+  },
+  "homepage": "https://github.com/ZeaZ-pixel/ArkenstonTask#readme"
+}

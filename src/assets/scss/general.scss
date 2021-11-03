@@ -1,0 +1,29 @@
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+.sections {
+  &__header {
+    margin-bottom: 200px;
+  }
+}
+
+.btn {
+  width: 112px;
+  height: 36px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  background: #F2994A;
+  box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+  border: none;
+  color: #FFFFFF;
+  margin-right: 0;
+  &_transparent{
+    border: 1px solid #F2994A;
+    color: #F2994A;
+    background-color: transparent;
+    margin-right: 21px;
+  }
+}
