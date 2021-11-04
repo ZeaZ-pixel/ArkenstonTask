@@ -3,8 +3,41 @@ html {
 }
 
 .sections {
+  background-image: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  height: 100%;
   &__header {
-    margin-bottom: 200px;
+    margin-bottom: 104px;
+    padding: 79px 170px 0 170px;
+  }
+  &__about {
+    position: relative;
+    padding-left: 170px;
+    padding-bottom: 140px;
+  }
+  &__choice {
+    padding: 0 170px 156px 170px;
+  }
+  &__invest {
+    padding: 0 0 0 170px;
+    background-color: #0F1144;
+  }
+  &__reasons {
+    padding: 50px 190px 78px 190px;
+    background:0 0/auto 100% url(../images/resonsBg.png) #0F1144;
+  }
+  &__footer {
+    position: relative; 
+    padding: 72px 170px 54px 170px;
+    &::after {
+      content: '';
+      background:0 0/cover no-repeat url(../images/footerBg.png) #0F1144;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -19,11 +52,110 @@ html {
   box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
   border: none;
   color: #FFFFFF;
-  margin-right: 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  &:hover {
+    transform: scale(1.1);
+  }
+
   &_transparent{
     border: 1px solid #F2994A;
     color: #F2994A;
     background-color: transparent;
-    margin-right: 21px;
+    box-shadow: none;
+  }
+}
+
+.title {
+  font-family: Inter;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 50px;
+  color: #99EFD0;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8476AA;
+}
+
+@media (max-width: 1024px) {
+  .sections {
+    &__header {
+      margin-bottom: 60px;
+      padding: 79px 130px 0 130px;
+    }
+    &__about {
+      padding-left: 140px;
+      padding-bottom: 90px;
+    }
+    &__choice {
+      padding: 0 140px 130px 140px;
+    }
+    &__invest {
+      padding-left: 140px;
+    }
+    &__reasons {
+      padding: 50px 140px 78px 140px;
+    }
+    &__footer {
+      padding: 72px 140px 54px 140px;
+    }
+  }
+  
+.title {
+  font-size: 35px;
+  line-height: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sections {
+    &__header {
+      padding: 79px 110px 0 110px;
+    }
+    &__about {
+      padding: 0 110px;
+      padding-bottom: 90px;
+    }
+    &__choice {
+      padding: 0 110px 130px 110px;
+    }
+    &__invest {
+      padding: 0 110px;
+    }
+    &__reasons {
+      padding: 50px 110px 78px 110px;
+    }
+    &__footer {
+      padding: 72px 110px 54px 110px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .sections {
+    &__header {
+      padding: 79px 50px 0 50px;
+      margin-bottom: 40px;
+    }
+    &__about {
+      padding: 0 50px;
+      padding-bottom: 90px;
+    }
+    &__choice {
+      padding: 0 50px 50px 50px;
+    }
+    &__invest {
+      padding: 0 50px;
+    }
+    &__reasons {
+      padding: 50px 50px 78px 50px;
+    }
+    &__footer {
+      padding: 72px 50px 54px 50px;
+    }
   }
 }

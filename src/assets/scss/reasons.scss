@@ -1,0 +1,74 @@
+.reasons {
+  &__body {
+    background: rgba(60, 62, 125, 0.19);
+    backdrop-filter: blur(134px);
+    max-width: 1100px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 50px 30px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 43px;
+    color: #F2994A;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-bottom: 23px;
+    text-align: center;
+  }
+  &__form {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  &__btn {
+    border-radius: 0px 5px 5px 0px;
+    height: 100%;
+  }
+  &__input {
+    box-sizing: border-box;
+    background: #353867;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    outline: none;
+    padding: 0 16px;
+    &::placeholder {
+      font-family: Inter;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: #FFFFFF;
+      opacity: 0.2;
+    }
+  }
+  &__spam {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #8476AA;
+    text-align: center;
+  }
+}
+
+@media (max-width:425px) {
+  .reasons {
+    &__input {
+      width: 100%;
+    }
+     &__btn {
+       width: 100px;
+     }
+  }
+}

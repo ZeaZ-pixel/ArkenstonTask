@@ -1,0 +1,40 @@
+.invest {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  &__info {
+    padding-top:34px;
+    max-width: 525px;
+  }
+  &__title {
+    margin-bottom: 32px;
+    span {
+      color: #F2994A;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 48px;
+  }
+  &__btn {
+    height: 54px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .invest {
+    &__img {
+      width: 100%;
+      img {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .invest {
+    &__img {
+      display: none;
+    }
+  }
+}

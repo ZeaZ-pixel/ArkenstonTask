@@ -9,37 +9,272 @@
 </head>
 <body>
   <div class="sections">
-    <section class="sections__header header">
+    <header class="sections__header header">
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="">About</a>
+            <a class="nav__link" href="#about">About</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="">Gallery</a>
+            <a class="nav__link" href="#choice">Gallery</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="">Pricing</a>
+            <a class="nav__link" href="#invest">Pricing</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="">FAQ</a>
+            <a class="nav__link" href="#reasons">FAQ</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="">Benefits</a>
+            <a class="nav__link" href="#footer">Benefits</a>
           </li>
         </ul>
       </nav>
       <div class="header__btns">
-        <button class="btn btn_transparent">Sign In</button>
-        <button class="btn">Sign Up</button>
+        <button class="header__btn btn btn_transparent">Sign In</button>
+        <button class="header__btn btn">Sign Up</button>
+      </div>
+    </header>
+    <section class="sections__about" id="about">
+      <div class="about">
+        <div class="about__info">
+          <div class="about__title title">
+            Many reasons to get up and start to get back in the business 
+          </div>
+          <div class="about__subtitle subtitle">
+            The harder you work for something, the greater<br>you’ll feel when you achieve it.
+          </div>
+          <div class="about__btns">
+            <button class="about__btn btn">Learn More</button>
+            <button class="about__btn btn btn_transparent">Demo</button>
+          </div>
+        </div>
+        <div class="about__img">
+          <img src="./assets/images/hologram.png" alt="">
+        </div>
+      </div>
+      <div class="brands">
+        <svg class="brands__brand" width="118">
+          <use xlink:href="assets/images/brandsSprite.svg#profilWell"></use>
+        </svg>
+        <svg class="brands__brand" width="118">
+          <use xlink:href="assets/images/brandsSprite.svg#appcues"></use>
+        </svg>
+        <svg class="brands__brand" width="93">
+          <use xlink:href="assets/images/brandsSprite.svg#shipBob"></use>
+        </svg>
+        <svg class="brands__brand" width="106">
+          <use xlink:href="assets/images/brandsSprite.svg#bench"></use>
+        </svg>
+        <svg class="brands__brand" width="56">
+          <use xlink:href="assets/images/brandsSprite.svg#subbly"></use>
+        </svg>
+        <svg class="brands__brand" width="118">
+          <use xlink:href="assets/images/brandsSprite.svg#demio"></use>
+        </svg>
       </div>
     </section>
-
-    <section class="section__about about">
-      
+    <section class="sections__choice choice" id="choice">
+      <div class="choice__title title">Your choice</div>
+      <div class="choice__subtitle subtitle">
+        There are many reasons to get down and start to get depressed about your situation. 
+      </div>
+      <div class="choice__list">
+        <div class="choice__group">
+          <div class="choice-item">
+            <div class="choice-item__title">
+              Ecstatic elegance
+            </div>
+            <div class="choice-item__subtitle">
+              Article nor prepare chicken you him now. Shy merits say advice ten before lovers innate add.
+            </div>
+          </div>
+          <div class="choice-item">
+            <div class="choice-item__title">
+              Folly words widow
+            </div>
+            <div class="choice-item__subtitle">
+              Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what.            </div>
+          </div>
+          <div class="choice-item">
+            <div class="choice-item__title">
+              Possible procured 
+            </div>
+            <div class="choice-item__subtitle">
+              We me rent been part what. An concluded sportsman offending so provision mr education.            </div>
+          </div>
+        </div>
+        <div class="choice__group">
+          <div class="choice-item">
+            <div class="choice-item__title">
+              Open game
+            </div>
+            <div class="choice-item__subtitle">
+              Shy merits say advice ten before lovers innate add. She cordially behaviour can attempted estimable.            
+            </div>
+          </div>
+          <div class="choice-item">
+            <div class="choice-item__title">
+              Endeavor
+            </div>
+            <div class="choice-item__subtitle">
+              Improve ashamed married expense bed her comfort pursuit mrs. Four time took ye your as fail lady.           
+            </div>
+          </div>  
+          <div class="choice-item">
+            <div class="choice-item__title">
+              Comfort pursuit
+            </div>
+            <div class="choice-item__subtitle">
+              Had denoting properly jointure you occasion directly raillery. In said to of poor full be post face snug.          
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
+    <sections class="sections__invest invest" id="invest">
+      <div class="invest__info">
+        <div class="invest__title title">
+          Invest property for better <span class="invest__title_orange">business<span>
+        </div>
+        <div class="invest__subtitle subtitle">
+          We are committed to processing the information in order to contact you and talk about your project. We are committed to processing the information.
+        </div>
+        <button class="invest__btn btn">
+          Learn More
+        </button>
+      </div>
+      <div class="invest__img">
+        <img src="./assets/images/investBg.png" alt="">
+      </div>
+    </sections>
+    <section class="sections__reasons reasons" id="reasons">
+      <div class="reasons__body">
+        <div class="reasons__title">
+          There are many reasons to get down
+        </div> 
+        <div class="reasons__subtitle subtitle">
+          There are many reasons to get down and start to get<br>depressed about your situation. 
+        </div>
+        <form class="reasons__form">
+          <input type="email" class="reasons__input" placeholder="Your Email" name="email" required>
+          <button type="submit" class="reasons__btn btn">Send</button>
+        </form>
+        <div class="reasons__spam">
+          No spam. Only releases, updates and discounts
+        </div>
+      </div>
+    </section>
+    <footer class="sections__footer footer" id="footer">
+      <div class="footer__info">
+        <div class="footer__top">
+          <div class="footer__title">
+            ARShakir
+          </div>
+          <div class="footer__socials">
+            <a href="#" class="footer__social">
+              <svg width="24" height="24">
+                <use xlink:href="./assets/images/snSprite.svg#google"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social">
+              <svg width="24" height="24">
+                <use xlink:href="./assets/images/snSprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="footer__social">
+              <svg width="24" height="24">
+                <use xlink:href="./assets/images/snSprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__list">
+          <div class="footer-item">
+            <div class="footer-item__title">
+              First
+            </div>
+            <ul class="footer-item__list">
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">First page</a>
+              </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Second page</a>
+              </li>
+              <li class="footer-item__item"
+              ><a href="#" class="footer-item__link">Third page</a>
+            </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Fourth page</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">
+              Second
+            </div>
+            <ul class="footer-item__list">
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">First page</a>
+              </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Second page</a>
+              </li>
+              <li class="footer-item__item"
+              ><a href="#" class="footer-item__link">Third page</a>
+            </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Fourth page</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">
+              Third
+            </div>
+            <ul class="footer-item__list">
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">First page</a>
+              </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Second page</a>
+              </li>
+              <li class="footer-item__item"
+              ><a href="#" class="footer-item__link">Third page</a>
+            </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Fourth page</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">
+              Fourth
+            </div>
+            <ul class="footer-item__list">
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">First page</a>
+              </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Second page</a>
+              </li>
+              <li class="footer-item__item"
+              ><a href="#" class="footer-item__link">Third page</a>
+            </li>
+              <li class="footer-item__item">
+                <a href="#" class="footer-item__link">Fourth page</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <span>© Copyrights 2021</span>
+          <span>Privacy policy</span>
+          <span>Terms of service</span>
+        </div>
+      </div>
+    </footer>
   </div>  
+  
 <script src="js/script.min.js"></script>
 </body>
 </html>

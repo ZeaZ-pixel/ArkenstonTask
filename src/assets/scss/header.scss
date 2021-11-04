@@ -1,8 +1,14 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 79px 170px 0 170px;
-  background-image: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
+  &__btns { 
+    display: flex;
+  }
+  &__btn {
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
 }
 .nav {
   &__list {
@@ -23,3 +29,10 @@
     text-transform: uppercase;
   }
 }
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+

@@ -1,0 +1,116 @@
+.choice {
+  &__title {
+    text-align: center;
+    margin-bottom: 13px;
+  }
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    &:first-child {
+      margin-bottom: 35px;
+      .choice-item {
+        &:nth-child(1) {
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../images/choice/Flip-horizontal.svg)
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../images/choice/Airpods.svg)
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../images/choice/LTE.svg)
+          }
+        }
+      }  
+    }
+    &:last-child {
+      .choice-item {
+        &:nth-child(1) {
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../images/choice/Thunder-move.svg)
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../images/choice/Attachment.svg)
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(../images/choice/Bulb.svg)
+          }
+        }
+      }
+    }
+  }
+}
+
+.choice-item {
+  position: relative;
+  max-width: 300px;
+  padding-left: 50px;
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #99EFD0;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8476AA;
+  }
+}
+
+@media (max-width: 425px) {
+  .choice {
+    &__group {
+      flex-wrap: wrap;
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
+    &-item {
+      margin-bottom: 35px;
+    }
+  } 
+}
